@@ -88,11 +88,19 @@ img {
 header {
     margin-top: 30px;
     padding-bottom: 77px;
+    background-color: white;
     
 }
 .header-inner {
+    z-index: 9999;
     display: flex;
-    align-items:center
+    align-items:center;
+    justify-content: space-between;
+    position:fixed;
+    top: 0;
+    gap: 100px;
+    background: white;
+    
 }
 .site-main-logo {
     text-decoration: none;
@@ -166,15 +174,15 @@ header {
     background: #69B99D;
 }
 .hero {
-    padding-bottom: 108px;
-    background-image: url("../images/herobgcolor.png");
-    background-repeat: no-repeat;
-    background-position: calc(50% + 350px) ;
-
- 
-
    
-
+    padding-bottom: 108px;
+}
+.hero .container {
+  
+    background: url('../images/realistic-confetti-background_23-2148971469.avif');
+    background-repeat:no-repeat;
+    background-size: contain;
+    padding: 294px ;
 }
 .hero-inner {
     position: relative;
@@ -183,8 +191,8 @@ header {
 }
 .hero-title {
 margin: 0 0 24px;
-   padding-top: 56px;
-    color:#1F2744;
+   padding-top: 26px;
+    color:#fbff00;
     font-family: "Rubik";
     font-size: 64px;
     font-weight: 600;
@@ -193,6 +201,7 @@ margin: 0 0 24px;
 }
 .hero-title-des {
     margin: 0 0 120px;
+    color:#fff
 }
 .section-title {
    
@@ -309,6 +318,7 @@ margin: 0 0 24px;
 .prices-list {
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
    justify-content: space-between;
     list-style-type: none;
 }
